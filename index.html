@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Path Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Graph Input</h3>
+            <textarea id="graphInput" placeholder="Enter adjacency list format:
+1: [2, 3]
+2: [1, 4]
+3: [1, 4]
+4: [2, 3]"></textarea>
+            <button id="renderGraph">Render Graph</button>
+            
+            <h3>Algorithm Selection</h3>
+            <select id="algorithmSelect">
+                <option value="bfs">Breadth First Search</option>
+                <option value="dfs">Depth First Search</option>
+                <option value="dijkstra">Dijkstra's Algorithm</option>
+                <option value="bellman-ford">Bellman-Ford Algorithm</option>
+                <option value="astar">A* Algorithm</option>
+                <option value="prims">Prim's Algorithm</option>
+                <option value="kruskals">Kruskal's Algorithm</option>
+            </select>
+            
+            <div id="algorithmControls">
+                <input type="text" id="startNode" placeholder="Start Node">
+                <input type="text" id="endNode" placeholder="End Node">
+                <button id="startVisualization">Start Visualization</button>
+            </div>
+            
+            <div class="controls">
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Reset</button>
+                <input type="range" id="speedControl" min="1" max="10" value="5">
+                <label>Speed</label>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <canvas id="graphCanvas" width="800" height="600"></canvas>
+            <div class="legend-container">
+                <div id="colorLegend" class="color-legend">
+                    <h4>Color Legend</h4>
+                    <div id="legendItems"></div>
+                </div>
+            </div>
+            <div id="stepInfo"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="algorithms/search.js"></script>
+    <script src="algorithms/shortest-path.js"></script>
+    <script src="algorithms/mst.js"></script>
+    <script>
+        visualizer = new GraphVisualizer();
+        visualizer.updateLegend('bfs');
+    </script>
+    
+</body>
+</html>
