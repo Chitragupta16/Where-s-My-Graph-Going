@@ -5,7 +5,7 @@ You can render a custom graph, choose an algorithm, and watch how it explores pa
 
 
 <p float="left">
-  <img src="[https://github.com/f-kuzey-edes-huyal/VM-UNet_Satellite_Segmentation/blob/main/images/segmentation_results.png](https://github.com/Chitragupta16/Where-s-My-Graph-Going/blob/main/Screenshot%202025-08-30%20022747.png)" width="100%" />
+  <img src="https://github.com/Chitragupta16/Where-s-My-Graph-Going/blob/main/Screenshot%202025-08-30%20022747.png" width="100%" />
 ![Graph Visualizer Screenshot](Screenshot 2025-08-30 022747.png)
 
 ---
