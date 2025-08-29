@@ -3,7 +3,7 @@
 An interactive graph visualization tool that lets you **see traversal algorithms in real time**.  
 You can render a custom graph, choose an algorithm, and watch how it explores paths step by step.
 
-![Graph Visualizer Screenshot](screenshot.png)
+![Graph Visualizer Screenshot](Screenshot 2025-08-30 022747.png)
 
 ---
 
