@@ -3,6 +3,9 @@
 An interactive graph visualization tool that lets you **see traversal algorithms in real time**.  
 You can render a custom graph, choose an algorithm, and watch how it explores paths step by step.
 
+
+<p float="left">
+  <img src="https://github.com/f-kuzey-edes-huyal/VM-UNet_Satellite_Segmentation/blob/main/images/segmentation_results.png" width="100%" />
 ![Graph Visualizer Screenshot](Screenshot 2025-08-30 022747.png)
 
 ---
